@@ -7,6 +7,33 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <section class="overlay">
+    <h1>Form Validation Using JavaScript</h1>
+    <div class="container">
+    <h2>Registration Form</h2>
+    <form id="myForm" onsubmit="return validateForm()">
+        
+        <label>Name</label>
+        <input type="text" id="name">
+        <span class="error" id="nameError"></span>
+
+        <label>Email</label>
+        <input type="text" id="email">
+        <span class="error" id="emailError"></span>
+
+        <label>Password</label>
+        <input type="password" id="password">
+        <span class="error" id="passwordError"></span>
+
+        <label>Phone</label>
+        <input type="text" id="phone">
+        <span class="error" id="phoneError"></span>
+
+        <button type="submit">Submit</button>
+    </form>
+    </div>
+    </section>
     
+<script src="script.js"></script>
 </body>
 </html>
