@@ -1,26 +1,62 @@
+body{
+    background-color: rgb(228, 246, 244);
+}
 .overlay{
     background-color: rgba(18, 138, 151, 0.647);
     display: flex;
     justify-content: space-evenly;
     width: 75%;
-    height: 400px;
+    height: 600px;
     border: solid rgb(14, 90, 90) 1px;
     border-radius: 20% 0%;
-    margin: 100px 100px;
+    margin: 50px 100px;
+    color: white;
 }
 .overlay > h1{
     padding: 100px 40px;
     margin: 0%;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 60px;
+}
+.overlay h2{
+    font-size: medium;
+    margin-top: -20px;
+    margin-bottom: 20px;
 }
 .container{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border: solid white 1px;
+    border-radius: 5%;
+    height: 85%;
+    width: 600px;
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    background-color: white;
+    color: black;
 }
 #myForm{
     display: flex;
     flex-direction: column;
-    width: 300px;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 200px;
+}
+input{
+    margin: 10px 0px;
+    height: 25px;
+    border-radius: 5px;
+    border: solid rgb(18, 138, 151) 1px;
+}
+button{
+    height: 30px;
+    border-radius: 5px;
+    border: solid rgb(18, 138, 151) 1px;
+    background-color: rgb(18, 138, 151);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
 }
