@@ -52,4 +52,20 @@ function togglePassword() {
     let passwordField = document.getElementById("password");
     let type = passwordField.getAttribute("type") === "password" ? "text" : "password";
     passwordField.setAttribute("type", type);
+    if(type === "password"){
+        document.querySelector(".toggle").innerHTML = "&#128065;";
+        const balls=document.querySelectorAll(".ball");
+        balls.forEach(ball => {
+            ball.style.right="5px";
+            ball.style.left="auto";
+        });
+    }
+    else{
+        document.querySelector(".toggle").innerHTML = "<img src='eye-slash.svg'>";
+        const balls=document.querySelectorAll(".ball");
+        balls.forEach(ball => {
+            ball.style.right="0px";
+            ball.style.left="5px";
+        });
+    }
 }
