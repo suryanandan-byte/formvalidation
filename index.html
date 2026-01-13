@@ -22,9 +22,11 @@
         <span class="error" id="emailError"></span>
 
         <label>Password</label>
-        <input type="password" id="password">
+        <div class="Password_box">
+            <input type="password" id="password" placeholder="Enter password">
+            <span class="toggle" onclick="togglePassword()">&#128065;</span>
+        </div>
         <span class="error" id="passwordError"></span>
-
         <label>Birth Date</label>
         <input type="date" id="birthDate">
         <span class="error" id="birthDateError"></span>
