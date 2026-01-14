@@ -25,7 +25,7 @@ body {
 }
 
 /* Heading */
-.overlay > h1 {
+.overlay  h1 {
     padding: 100px 40px;
     margin: 0;
     font-family: Cambria, Georgia, serif;
@@ -90,7 +90,12 @@ body {
     flex-direction: column;
     width: 250px;
 }
-
+.notform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
 input {
     margin: 5px 0 10px;
     height: 30px;

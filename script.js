@@ -62,6 +62,8 @@ function togglePassword() {
     }
     else{
         document.querySelector(".toggle").innerHTML = "<img src='eye-slash.svg'>";
+        document.querySelector(".toggle").style.width="15px";
+        document.querySelector(".toggle").style.height="15px";
         const balls=document.querySelectorAll(".ball");
         balls.forEach(ball => {
             ball.style.right="0px";
